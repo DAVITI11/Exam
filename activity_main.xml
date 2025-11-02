@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#ff0000"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:text="იარაღის ტარების გამოცდა"
+                ></TextView>
+        </LinearLayout>
+
+<!--  1 question -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:textColor="#ff0000"
+                android:text="#1. როდის არის იარაღი საბრძოლო მდგომარეობაში მოყვანილი, რათა მსროლელმა შეძლოს გასროლის წარმოება"
+                >
+            </TextView>
+            <RadioGroup
+                android:id="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RadioButton
+                    android:id="@+id/q1op1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text=" მაშინ, როდესაც იარაღი განმუხტულია და აყვანილია მცველზე"
+                    >
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/q1op2"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:text="მაშინ, როდესაც ვაზნა მოთავსებულია ლულის სავაზნე არხში და იარაღი მოხსნილია მცველიდან"
+                    ></RadioButton>
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <!--  2 question -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:textColor="#ff0000"
+                android:text="#2. მიზანშეწონილია თუ არა გაზის იარაღის გამოყენება შემხვედრი ქარისა და ჩაკეტილი სივრცის (ოთახი, ლიფტი და ა.შ.) შემთხვევაში"
+                >
+            </TextView>
+            <RadioGroup
+                android:id="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RadioButton
+                    android:id="@+id/q2op1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="არ არის მიზანშეწონილი
+"
+                    >
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/q2op2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="მიზანშეწონილია"
+                    ></RadioButton>
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+        <!--  3 question -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textColor="#ff0000"
+                android:text="#3. დასაშვებია თუ არა თავდაცვის მოკლელულიანი ცეცხლსასროლი იარაღის გამოყენება თავდაცვის გარდა სხვა დანიშნულებით"
+                >
+            </TextView>
+            <RadioGroup
+                android:id="@+id/question3"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="vertical">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="დასაშვებია"
+                    >
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/q3op1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text=" არა, არ არის დასაშვები"
+                    ></RadioButton>
+                <RadioButton
+                    android:id="@+id/q3op2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text=" დასაშვებია ნადირობისათვის"></RadioButton>
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <!--  4 question -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:textColor="#ff0000"
+                android:text="#4 ჩამოთვლილი დებულებებიდან რომელი არ არის სწორი"
+                >
+            </TextView>
+            <RadioGroup
+                android:id="@+id/question4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RadioButton
+                    android:id="@+id/q4op1"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:text=" ფიზიკურ პირს არ აქვს უფლება, ატაროს რეგისტრირებული თავდაცვის მოკლელულიანი ცეცხლსასროლი იარაღი, გარდა კანონმდებლობით გათვალისწინებული შემთხვევებისა"
+                    >
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/q4op2"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:text=" თავდაცვის მოკლელულიანი ცეცხლსასროლი იარაღი რეგისტრირდება მხოლოდ შენახვის უფლებით, გარდა კანონმდებლობით გათვალისწინებული შემთხვევებისა"
+                    ></RadioButton>
+                <RadioButton
+                    android:id="@+id/q4op3"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text=" ფიზიკურ პირს უფლება არ აქვს, ატაროს (მასზე) რეგისტრირებული გაზის (აირის) იარაღი"
+                    >
+                </RadioButton>
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+
+        <!--  5 question -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textColor="#ff0000"
+                android:text="#5. სად უნდა შეინახოს საქართველოს ან უცხო ქვეყნის მოქალაქემ მასზე რეგისტრირებული თავდაცვის მოკლელულიანი ცეცხლსასროლი იარაღი"
+                >
+            </TextView>
+            <RadioGroup
+                android:id="@+id/question5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <RadioButton
+                    android:id="@+id/q5op1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text=" მის მიერ არჩეულ ნებისმიერ ადგილას, სადაც უზრუნველყოფილი იქნება იარაღის შენახვის წესების დაცვა"
+                    >
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/q5op2"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:text=" სარეგისტრაციო ჩანაწერებსა და იარაღის სარეგისტრაციო მოწმობაში ასახულ საცხოვრებელ ადგილას"
+                    ></RadioButton>
+                <RadioButton
+                    android:id="@+id/q5op3"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="  ამ ბილეთში ჩამოთვლილ ორივე ადგილას"
+                    ></RadioButton>
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <!--  6 question -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#ff0000"
+                android:text="#6. თავდაცვის მოკლელულიანი ცეცხლსასროლი იარაღი გადატანისას უნდა იყოს"
+                >
+            </TextView>
+            <RadioGroup
+                android:id="@+id/question6"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <RadioButton
+                    android:id="@+id/q6op1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text=" განმუხტულ (დაშლილ) მდგომარეობაში, საბრძოლო მასალისგან განცალკევებული"
+                    >
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/q6op2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text=" განმუხტულ (დაშლილ) მდგომარეობაში, საბრძოლო მასალასთან ერთად"
+                    ></RadioButton>
+                <RadioButton
+                    android:id="@+id/q6op3"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text=" საბრძოლო მასალისგან განცალკევებული, იარაღის განმუხტვა აუცილებელი არ არის"
+                    ></RadioButton>
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+        <!--  7 question -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textColor="#ff0000"
+                android:text="#7. აქვს თუ არა უფლება თავდაცვის მოკლელულიანი ან გაზის იარაღის მესაკუთრეს საზღვარგარეთ გამგზავრებისას თავის საკუთრებაში არსებული იარაღი გადასცეს სხვა პირს"
+                >
+            </TextView>
+            <RadioGroup
+                android:id="@+id/question7"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+                <RadioButton
+                    android:id="@+id/q7op1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text=" დიახ, მხოლოდ ოჯახის წევრს"
+                    >
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/q7op2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text=" დიახ, ნებისმიერ პირს, ვისაც აქვს იარაღის ტარების უფლება"
+                    ></RadioButton>
+                <RadioButton
+                    android:id="@+id/q7op3"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text=" დიახ, ნებისმიერ ნდობით აღჭურვილ პირს"
+                    ></RadioButton>
+                <RadioButton
+                    android:id="@+id/q7op4"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text=" არა, არ აქვს">
+                </RadioButton>
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <!--  8 question -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColor="#ff0000"
+                android:text="#8. რა თანმიმდევრობით უნდა მოხდეს პისტოლეტის შემოწმება (განმუხტვა)"
+                >
+            </TextView>
+            <RadioGroup
+                android:id="@+id/question8"
+                android:layout_width="match_parent"
+                android:layout_height="240dp">
+                <RadioButton
+                    android:id="@+id/q8op1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text=" მოვხსნათ მჭიდი, გადავიყვანოთ საკეტი შემფერხებელზე და მოვახდინოთ სავაზნე არხის ვიზუალური დათვალიერება"
+                    >
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/q8op2"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text=" გადავიყვანოთ საკეტი შემფერხებელზე, მოვხსნათ მჭიდი, სავაზნე არხის ვიზუალური დათვალიერება არ არის საჭირო"
+                    ></RadioButton>
+                <RadioButton
+                    android:id="@+id/q8op3"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:text=" გადავიყვანოთ საკეტი შემფერხებელზე, დავუშვათ შემფერხებლიდან, მოვხსნათ მჭიდი და გავაკეთოთ საკონტროლო დასხლეტა"
+                    ></RadioButton>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+        <!--  9 question -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textColor="#ff0000"
+                android:text="#9. ცეცხლსასროლი იარაღის გაწმენდის წინ უსაფრთხოების მიზნით აუცილებელია თუ არა ლულის სავაზნე არხის შემოწმება მასში ვაზნების არსებობაზე"
+                >
+            </TextView>
+            <RadioGroup
+                android:id="@+id/question9"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <RadioButton
+                    android:id="@+id/q9op1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text=" აუცილებელია"
+                    >
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/q9op2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text=" არ არის აუცილებელი"
+                    ></RadioButton>
+                <RadioButton
+                    android:id="@+id/q9op3"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text=" დამოკიდებულია ცეცხლსასროლი იარაღის ტიპზე"
+                    ></RadioButton>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+        <!--  10 question -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textColor="#ff0000"
+                android:text="#10. უსაფრთხოების მიზნით, როგორ უნდა მოიქცეთ გაზის (აირის) იარაღიდან გასროლის წარმოების შემდეგ"
+                >
+            </TextView>
+            <RadioGroup
+                android:id="@+id/question10"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <RadioButton
+                    android:id="@+id/q10op1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text=" გასროლის შემდეგ გასროლის ადგილი უნდა დატოვოთ რამდენიმე მეტრის მანძილზე"
+                    >
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/q10op2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text=" უნდა დარჩეთ გასროლის ადგილზე"
+                    ></RadioButton>
+                <RadioButton
+                    android:id="@+id/q10op3"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text=" განახორციელოთ ხელმეორედ გასროლა"
+                    ></RadioButton>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <!--  11 question -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:textColor="#ff0000"
+                android:text="#11. მიზანშეწონილია თუ არა იარაღის შენახვა ისეთ საცავში, სადაც საწვავი, ადვილადაალებადი და ქიმიური ნივთიერებები ინახება"
+                >
+            </TextView>
+            <RadioGroup
+                android:id="@+id/question11"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <RadioButton
+                    android:id="@+id/q11op1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text=" მიზანშეწონილია"
+                    >
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/q11op2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text=" არ არის მიზანშეწონილი"
+                    ></RadioButton>
+                <RadioButton
+                    android:id="@+id/q11op3"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text=" მიზანშეწონილია მხოლოდ ისეთ შენობაში, სადაც ქიმიური ნივთიერებები ინახება"
+                    ></RadioButton>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+        <!--  12 question -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="#ff0000"
+                android:text="#12. მცველი იცავს იარაღს"
+                >
+            </TextView>
+            <RadioGroup
+                android:id="@+id/question12"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <RadioButton
+                    android:id="@+id/q12op1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text=" დაზიანებისგან"
+                    >
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/q12op2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text=" უნებლიე გასროლისგან"
+                    ></RadioButton>
+                <RadioButton
+                    android:id="@+id/q12op3"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text=" აკონტროლებს ვაზნების რაოდენობას მჭიდში"
+                    ></RadioButton>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+
+        <!--  13 question -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textColor="#ff0000"
+                android:text="#13. ცეცხლსასროლი იარაღის შემოწმებისა და განმუხტვისას რა წესი უნდა დაიცვას მსროლელმა უპირველესად"
+                >
+            </TextView>
+            <RadioGroup
+                android:id="@+id/question13"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <RadioButton
+                    android:id="@+id/q13op1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="  იარაღს ყოველთვის უნდა მოეპყროს როგორც დამუხტულს"
+                    >
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/q13op2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="  თუ იარაღში მჭიდი არ არის, უსაფრთხოების წესების დაცვა არ არის საჭირო"
+                    ></RadioButton>
+                <RadioButton
+                    android:id="@+id/q13op3"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text=" იარაღს ყოველთვის უნდა მოეპყროს როგორც განმუხტულს"
+                    ></RadioButton>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+        <!--  14 question -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#ff0000"
+                android:text="#14. სასხლეტზე თითის დადება მიზანშეწონილია"
+                >
+            </TextView>
+            <RadioGroup
+                android:id="@+id/question14"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+                <RadioButton
+                    android:id="@+id/q14op1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text=" ყოველთვის, როდესაც იარაღი ხელში გიჭირავთ"
+                    >
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/q14op2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text=" მხოლოდ მას შემდეგ, როცა სროლას გადაწყვეტთ"
+                    ></RadioButton>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+        <!--  15 question -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColor="#ff0000"
+                android:text="#15. ჩამოთვლილთაგან რომელია სწორი"
+                >
+            </TextView>
+            <RadioGroup
+                android:id="@+id/question15"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+                <RadioButton
+                    android:id="@+id/q15op1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text=" სასხლეტს თითი დაადეთ მაშინ, როდესაც აპირებთ გასროლას"
+                    >
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/q15op2"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text=" იარაღი ჩათვალეთ დამუხტულად, სანამ თვითონ არ შეამოწმებთ და განმუხტავთ მას"
+                    ></RadioButton>
+                <RadioButton
+                    android:id="@+id/q15op3"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text=" იარაღი მიმართული უნდა იყოს უსაფრთხო ადგილისაკენ"
+                    >
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/q15op4"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text=" ამ ბილეთში აღნიშნული ყველა პასუხი სწორია"
+                    ></RadioButton>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+    >
+    <Button
+        android:id="@+id/SubmitButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Finish"
+        >
+
+    </Button>
+
+</LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
